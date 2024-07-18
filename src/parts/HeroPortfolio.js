@@ -15,7 +15,7 @@ export default function HeroPortfolio() {
             Portfolio
           </h1>
           <p className="font-light text-xl text-gray-400 leading-relaxed">
-            As a Software House that designs and develops website, mobile apps, and UI/UX design, we have been trusted by our clients from all around the world.
+            As a Software House that designs and develops <b>website</b>, <b>mobile apps</b>, <b>Dapp</b>, <b>Game</b> and <b>UI/UX design</b>, we have been trusted by our clients from all around the world.
           </p>
         </div>
         <div className="w-full sm:w-1/2 sm:pr-12">

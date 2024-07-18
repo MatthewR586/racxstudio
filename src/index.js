@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'assets/css/styles.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
 ReactDOM.render(
   <React.StrictMode>

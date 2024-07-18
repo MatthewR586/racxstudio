@@ -19,27 +19,24 @@ export default function DiscussForm(props) {
 
   const submitEmail = () => {
     const {
-      name, company, email, phone, projectIdea,
+       email, projectIdea,
     } = data;
 
     const templateParams = {
-      from_name: `${name} - ${company} ( ${phone} - ${email} )`,
-      to_name: 'Racxstudio',
+      from_name: `${email}`,
+      to_name: 'NikkTech',
       message: projectIdea,
     };
 
     if (
-      name !== ''
-            && company !== ''
-            && email !== ''
-            && phone !== ''
-            && projectIdea !== ''
+      email !== ''
+      && projectIdea !== ''
     ) {
       emailjs.send(
-        'service_h4gtndg',
-        'template_a9tvs7a',
+        'service_2fvnmzk',
+        'template_y04z7oy',
         templateParams,
-        'user_csqIxzN5mKsl1yw4ffJzV',
+        'Qr38DUx61G49AXqun',
       )
         .then(() => {
           toast.success('Success! we\'\ll get back to you soon. Thank you!');
@@ -63,26 +60,7 @@ export default function DiscussForm(props) {
         </p>
 
         <div className="flex flex-col">
-          <div className="flex flex-col sm:flex-row mx-auto">
-            <Form
-              id="name"
-              name="name"
-              type="text"
-              value={data.name}
-              placeholder="Your name"
-              className=""
-              onChange={props.onChange}
-            />
-            <Form
-              id="company"
-              name="company"
-              type="text"
-              value={data.company}
-              placeholder="Your company"
-              className=""
-              onChange={props.onChange}
-            />
-          </div>
+       
 
           <div className="flex flex-col sm:flex-row mx-auto">
             <Form
@@ -91,15 +69,6 @@ export default function DiscussForm(props) {
               type="email"
               value={data.email}
               placeholder="Your email address"
-              className=""
-              onChange={props.onChange}
-            />
-            <Form
-              id="phone"
-              name="phone"
-              type="tel"
-              value={data.phone}
-              placeholder="Your contact number"
               className=""
               onChange={props.onChange}
             />

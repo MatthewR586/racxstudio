@@ -38,7 +38,7 @@ export default function Header(props) {
               Home
             </Button>
           </li>
-          <li className="py-2 lg:py-0">
+          {/* <li className="py-2 lg:py-0">
             <Button
               className={`${path === '/team' ? 'active-link' : ''} text-lg px-5 no-underline hover:underline`}
               type="link"
@@ -46,7 +46,7 @@ export default function Header(props) {
             >
               Team
             </Button>
-          </li>
+          </li> */}
           <li className="py-2 lg:py-0">
             <Button
               className={`${path === '/project' ? 'active-link' : ''} text-lg px-5 no-underline hover:underline`}

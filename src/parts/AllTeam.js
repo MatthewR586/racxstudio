@@ -7,7 +7,9 @@ import Fade from 'react-reveal/Fade';
 export default function AllTeam({ data }) {
   return (
     <section className="container mx-0 sm:mx-auto">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-32 sm:gap-14 lg:gap-10 mx-16 justify-items-center">
+      <h1 className="text-5xl text-theme-blue text-center font-bold mb-5">Co founders</h1>
+
+      <div className="gap-y-10 gap-x-10 sm:gap-14 lg:gap-20 mx-16 justify-center flex">
         {
                     data.map((item, index) => (
                       <Fade bottom delay={200 * index}>

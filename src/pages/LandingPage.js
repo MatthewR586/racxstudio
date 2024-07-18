@@ -10,8 +10,8 @@ import Advantage from 'parts/Advantage';
 import Testimonial from 'parts/Testimonial';
 import Discuss from 'parts/Discuss';
 import Footer from 'parts/Footer';
-
 import Data from 'json/landingPage.json';
+import AllTeam from 'parts/AllTeam';
 
 export default class LandingPage extends Component {
   componentDidMount() {
@@ -27,6 +27,7 @@ export default class LandingPage extends Component {
         <Portfolio data={Data.portfolio} />
         <Advantage data={Data.advantage} />
         <Testimonial data={Data.testimonial} />
+        <AllTeam data={Data.team} />
         <Discuss />
         <Footer />
       </>
